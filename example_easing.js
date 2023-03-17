@@ -1,15 +1,15 @@
 const ease = new p5.Ease();
 
-function draw_one_frame(cur_frac) {
+function draw_one_frame(cur_frac2) {
   let going_right = true;
   let amount_across = 0;
-  if (cur_frac < 0.5) {
+  if ( cur_frac2< 0.5) {
     going_right = true;
-    amount_across = cur_frac * 2;
+    amount_across = cur_frac2 * 2;
   }
   else {
     going_right = false;
-    amount_across = (cur_frac-0.5) * 2;
+    amount_across = (cur_frac2-0.5) * 2;
   }
 
   let ellipse_radius = int(0.08*height);
